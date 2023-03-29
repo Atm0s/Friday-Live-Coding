@@ -1,0 +1,29 @@
+.button {
+	font-family: inherit;
+	@include font (1.6rem, 2.2rem, 600);
+	padding: 11px 25px 13px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all .3s;
+
+	&_bordered {
+		background: $color-light;
+		border: 1px solid $color-hovered;
+		color: #173A56;
+		&:hover{
+			border: 1px solid $color-hovered;
+			background: $color-hovered;
+		}
+	}
+
+	&_colored {
+		background: $color-primary;
+		border: 1px solid $color-primary;
+		color: $color-light;
+		&:hover{
+			border: 1px solid $color-additional;
+			background: $color-additional;
+		}
+	}
+
+}

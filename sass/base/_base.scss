@@ -4,7 +4,7 @@ html {
 
 body {
 	font-family: 'Open Sans', Verdana, sans-serif;
-	font-size: 1.6rem;
+	@include font (1.6rem, 2.6rem);
 }
 
 h1 {
@@ -28,3 +28,6 @@ h5 {
 	@include font (1.6rem, 2.6rem, bold);
 }
 
+// li{
+// 	list-style: none;
+// }
