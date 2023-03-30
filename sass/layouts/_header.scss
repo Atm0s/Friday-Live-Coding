@@ -14,14 +14,3 @@
 	display: flex;
 	gap: 14px;
 }
-
-.navigation {
-	display: flex;
-	gap: 17px;
-	@include font (1.6rem, 2.6rem);
-}
-
-.navigation__link {
-	list-style: none;
-	cursor: pointer;
-}

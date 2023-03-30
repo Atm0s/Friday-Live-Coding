@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-	font-family: 'Poppins', Verdana, sans-serif;
+	@extend %font-add;
 	@include font (4.4rem, 5.4rem, bold);
 }
 

@@ -346,10 +346,23 @@ template {
   display: none;
 }
 
-.button, .logo-path {
+section, main, footer, header, article {
+  display: block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navigation__link, .button, .logo-path {
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+
+.promo__text, .link-button, h1 {
+  font-family: "Poppins", Verdana, sans-serif;
 }
 
 html {
@@ -365,7 +378,6 @@ body {
 }
 
 h1 {
-  font-family: "Poppins", Verdana, sans-serif;
   font-size: 4.4rem;
   line-height: 5.4rem;
   font-weight: bold;
@@ -400,10 +412,6 @@ h5 {
   font-style: normal;
 }
 
-.logo {
-  cursor: pointer;
-}
-
 .logo-svg:hover .logo-path {
   fill: #FF9900;
 }
@@ -435,6 +443,38 @@ h5 {
 .button_colored:hover {
   border: 1px solid #FF7549;
   background: #FF7549;
+}
+
+.link-button {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #FF9900;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.link-button:hover {
+  color: #FF7549;
+}
+
+.link-button__text {
+  margin-left: 9px;
+}
+
+.ico {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.ico_play {
+  background-image: url("../img/icons/play.svg");
+  width: 18px;
+  height: 19px;
 }
 
 .wrapper {
@@ -483,6 +523,9 @@ h5 {
   list-style: none;
   cursor: pointer;
 }
+.navigation__link:hover {
+  color: #FF9900;
+}
 
 .contact-us {
   background: #FFEEE1;
@@ -506,7 +549,20 @@ h5 {
 }
 
 .promo__content {
-  padding-right: 65px;
+  max-width: 480px;
+}
+
+.promo__title {
+  margin: 0 0 30px;
+}
+
+.promo__text {
+  margin: 0 0 45px;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #544837;
 }
 
 .promo__buttons > * {
